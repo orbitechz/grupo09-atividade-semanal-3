@@ -1,0 +1,261 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+  header .menu {
+    justify-content: space-between;
+    width: 1140px;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+  }
+    header .menu ul {
+      margin: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-flow: row;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      justify-content: flex-start;
+    }
+      header .menu ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        }
+          header .menu ul li a:hover {
+            text-decoration: underline;
+          }
+header .menu .btnLogin {
+  background-color: #217BF4;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 150px;
+  display: block;
+  cursor: pointer;
+}
+
+.home {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+  .home h1{
+    font-family: "Inter", sans-serif;
+    color: #217BF4;
+    font-size: 2em;
+  }
+  .home p{
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 1em;
+  }
+  .home .content {
+    height: 700px;
+    display: flex;
+    align-items: center;
+  }
+    .home .content .esquerdaHome {
+      height: 50%;
+      align-items: center;
+    }
+    .home .content .direitaHome {
+      height: 50%;
+      align-items: center;
+    }
+      .home .btnCommunity{
+        background-color: #bfd9fb;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        border: none;
+        color: #217BF4;
+        padding: 10px;
+        border-radius: 15px;
+        width: 200px;
+        height: 50px;
+        display: block;
+        cursor: pointer;
+      }
+
+      .home .btns{
+        display: flex;
+        flex-flow: row;
+        flex-direction: row;
+        margin-top: 15px;
+      }
+
+      .home .btns .btnLogin {
+        background-color: #217BF4;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        width: 150px;
+        display: block;
+        cursor: pointer;
+        height: 50px;
+      }
+      
+      .home .btns .btnInviteFriend {
+        background-color: transparent;
+        border: 1px solid #217BF4;
+        color: #217BF4;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 15px;
+        width: 150px;
+        display: block;
+        cursor: pointer;
+        height: 50px;
+        margin-left: 10px;
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 600px) {
+
+      /*Nav Menu*/
+      header {
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+        margin-top: -20px;
+      }
+        header .menu {
+          justify-content: space-between;
+          display: flex;
+          flex-flow: column;
+          flex-direction: column;
+        }
+          
+          header .menu ul {
+            margin: auto;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            flex-flow: column;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: flex-start;
+          }
+            header .menu ul li a {
+              display: block;
+              padding: 10px;
+              text-decoration: none;
+              color: black;
+              }
+                header .menu ul li a:hover {
+                  text-decoration: underline;
+                }
+      header .menu .btnLogin {
+        background-color: #217BF4;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        width: 90%;
+        cursor: pointer;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+
+      /*Banner da Home*/
+      .home {
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+      }
+        .home .content {
+          height: 700px;
+          display: flex;
+          align-items: center;
+          flex-flow: column;
+          flex-direction: column;
+          padding: 20px;
+        }
+          .home .content .esquerdaHome {
+            height: 50%;
+            align-items: center;
+          }
+          .home .content .direitaHome {
+            height: 50%;
+            align-items: center;
+          }
+          .home .content .direitaHome img{
+            margin-top: -50px;
+          }
+    }
