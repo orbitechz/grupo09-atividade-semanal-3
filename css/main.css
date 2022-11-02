@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 body {
@@ -227,10 +228,9 @@ header .menu .btnLogin {
     }
     
     .sub-footer{
+        max-width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 200px;
+        justify-content: space-around;
         align-items: center;
         background-color: #20202D;
         color: #fff;
@@ -267,6 +267,56 @@ header .menu .btnLogin {
       margin-right: 10px;
     }
 
+    @media (max-width:610px) {
+
+      .main-footer{
+        display: grid;
+        grid-template-columns: auto auto ;
+      }
+
+
+    }
+
+    @media (max-width:450px) {
+      .main-footer{
+        display: flex;
+      }
+
+      .main-footer .subscribe .buttonIn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+    
+    .main-footer .subscribe .buttonIn input {
+        width: 100%;
+        height: 38px;
+    }
+
+    
+    .main-footer .subscribe .buttonIn button {
+        width: 100px;
+        position: relative;
+        border-radius: 12px;
+    }
+      
+    }
+
+    @media (max-width: 500px){
+
+      .sub-footer{
+        height: max-content;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+    }
 
     
 
