@@ -9,6 +9,8 @@ body {
   background-color: #fff;
 }
 
+/* NAVBAR */
+
 header {
   height: 120px;
   display: flex;
@@ -60,6 +62,8 @@ header .menu .btnLogin {
   display: block;
   cursor: pointer;
 }
+
+/* HOME */
 
 .home {
   display: flex;
@@ -471,41 +475,9 @@ header .menu .btnLogin {
 
     }
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @media (max-width: 600px) {
 
-      /*Nav Menu*/
+      /*Nav Menu Responsive*/
       header {
         text-align: center;
         border-bottom: 1px solid #ccc;
