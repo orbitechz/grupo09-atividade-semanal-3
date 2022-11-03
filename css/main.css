@@ -142,6 +142,130 @@ header .menu .btnLogin {
         height: 50px;
         margin-left: 10px;
       }
+
+      /* COMMUNITY SECTION */
+
+      .comunidade{
+        padding: 35px;
+        max-width: 100%;
+        background: linear-gradient( rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .comunidade .com-text{
+        text-align: center;
+        font-family: Inter;
+
+      }
+
+      .comunidade .com-text .pre-text{
+        color: #217BF4;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .comunidade .com-text .com-title{
+        color: #0A093D;
+        font-size: 23px;
+        line-height: 23px;
+        font-weight: 900;
+        padding-top: 5px;
+      }
+
+      .comunidade .com-text .post-text{
+        color: #656464;
+        font-size: 200;
+        font-size: 14px;
+        padding-top: 17px;
+      }
+
+      .comunidade .layout {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+        column-gap: 30px;
+      }
+
+      .comunidade .layout .row{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        box-shadow: 14px 22px 52px -12px #7F7F7F21;
+        border-radius: 14px;
+        padding: 20px;
+        max-width: 395px;
+        height: 115px;
+      }
+
+      .comunidade .layout .row:hover{
+        transform: scale(1.09);
+      }
+
+      .comunidade .layout .row img{
+        align-self: flex-start;
+        width: 58px;
+        height: 58px;
+      }
+
+      .comunidade .layout .row .text_layout{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: Inter;
+      }
+
+      .comunidade .layout .row .text_layout .com-text_main{
+        font-weight: 600;
+
+      }
+
+      .comunidade .layout .row .text_layout .com-text_sub{
+        color: #656464;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      @media (max-width:720px) {
+
+        .comunidade .layout {
+          grid-template-columns: auto;
+        }
+        
+      }
+
+      @media (max-width:370px) {
+  
+        .comunidade .layout .row .text_layout .com-text_sub{
+          font-size: 12px;
+          line-height: 15px;
+        }
+        
+      }
+
+      @media (max-width:335px) {
+
+        .comunidade .layout .row{
+          flex-direction: column;
+          height: max-content;
+          align-items: center;
+        }
+
+        .comunidade .layout .row img{
+          align-self: center;
+        }
+
+        
+        
+      }
+
     
       /* FOOTER */
 
