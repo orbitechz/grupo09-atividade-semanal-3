@@ -418,42 +418,41 @@ header .menu .btnLogin {
     }
   /*------------------------------------SOBRE NÓS-------------------------*/
   .sobre-nos{
-    padding: 2rem;
     background-color: #fff;
     font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
   }
   
-  .sobre-nos h3{
+  .sobre-nos .sobre-nos-div h3 {
     color: #217BF4;
     padding-bottom: 0.5rem;
   }
 
-  .sobre-nos h1{
+  .sobre-nos .sobre-nos-div h1{
     color: #0A093D;
   }
 
-  .sobre-nos li{
+  .sobre-nos .sobre-nos-div li{
     color: #171648;
   }
   
-  .sobre-nos ul{
-    list-style: none;
-    font-size: 1.2rem;
-    padding-top: 70px;
-
+  
+  .sobre-nos .sobre-nos-div ul li{
+    position: relative;
   }
 
   .sobre-nos ul li:before {
-  content: '\2022';
-  margin: 1 1px;
-  color: #217BF4; /* cor da bolinha */
-  padding: 10px;
- /* height: 20px;
-  width: 20px;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: #dfdff5; */
+  position: absolute;
+  right: 100%;
+  margin-right: 0.5em;
+  text-shadow: .1em 0.1em 0.2em;
+  box-shadow: inset 10px 0 0 0 red;
+
 }
+
 
 .sobre-nos p{
 overflow-wrap: break-word;
