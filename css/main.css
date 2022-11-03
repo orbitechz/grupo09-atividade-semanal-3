@@ -9,6 +9,8 @@ body {
   background-color: #fff;
 }
 
+/* NAVBAR */
+
 header {
   height: 120px;
   display: flex;
@@ -60,6 +62,8 @@ header .menu .btnLogin {
   display: block;
   cursor: pointer;
 }
+
+/* HOME */
 
 .home {
   display: flex;
@@ -266,6 +270,35 @@ header .menu .btnLogin {
         
       }
 
+      /* SOBRENOS */
+
+      .sobre-nos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .sobre-nos .direita-sobre {
+        display: flex;
+        gap: 30px;
+      }
+
+      .sobre-nos .direita-sobre .grid{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sobre-nos .direita-sobre .grid img{
+        width: 200px;
+        height: 200px;
+
+      }
+
+      .sobre-nos .direita-sobre .video img{
+        width: 300px;
+        height: 500px;
+      }
+
     
       /* FOOTER */
 
@@ -442,41 +475,9 @@ header .menu .btnLogin {
 
     }
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @media (max-width: 600px) {
 
-      /*Nav Menu*/
+      /*Nav Menu Responsive*/
       header {
         text-align: center;
         border-bottom: 1px solid #ccc;
