@@ -229,6 +229,39 @@ header .menu .btnLogin {
         line-height: 20px;
       }
 
+      @media (max-width:720px) {
+
+        .comunidade .layout {
+          grid-template-columns: auto;
+        }
+        
+      }
+
+      @media (max-width:370px) {
+  
+        .comunidade .layout .row .text_layout .com-text_sub{
+          font-size: 12px;
+          line-height: 15px;
+        }
+        
+      }
+
+      @media (max-width:335px) {
+
+        .comunidade .layout .row{
+          flex-direction: column;
+          height: max-content;
+          align-items: center;
+        }
+
+        .comunidade .layout .row img{
+          align-self: center;
+        }
+
+        
+        
+      }
+
     
       /* FOOTER */
 
