@@ -204,6 +204,10 @@ header .menu .btnLogin {
         height: 115px;
       }
 
+      .comunidade .layout .row:hover{
+        transform: scale(1.09);
+      }
+
       .comunidade .layout .row img{
         align-self: flex-start;
         width: 58px;
