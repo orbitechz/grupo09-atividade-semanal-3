@@ -382,8 +382,6 @@ header {
 /* --------------------------------------- AVALIACOES --------------------------------------------------------- */
 /* ----- AUTHOR: JEAN ----- */
 
-
-
 .avaliacoes{
   display: flex;
   align-items: center;
@@ -470,7 +468,7 @@ header {
 }
 
 .box .icon-header,
-.box .members{
+.box .title{
   display: flex;
   justify-content: left;
   align-items: center;
@@ -491,9 +489,19 @@ header {
   width: 7rem;
   height: 7rem;
 }
+.box img.github{
+  margin-left: -1rem;
+  width: 3rem;
+  height: 3rem;
+}
 
-.box .members p{
+.box .title.members p{
   margin-left: 6rem;
+  margin-bottom: .5rem;
+}
+
+.box .title.awards p{
+  margin-left: 2rem;
   margin-bottom: .5rem;
 }
 
@@ -505,6 +513,8 @@ header {
 
 .box .join{
   background-color: transparent;
+  font-weight: bold;
+  color:#8C8C8C;
   border: none;
   font-family: Inter;
   display: flex;
@@ -520,12 +530,9 @@ header {
 }
 
 .destaque{
-  color: #217BF4;
+  color: #217BF4!important;
   font-weight: bold;
 }
-
-
-
 
 /*--------------------------------------COMMUNITY SECTION-----------------------------------------------------*/
 
