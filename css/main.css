@@ -5,6 +5,26 @@
   max-width: 100%;
 }
 
+.mainBtn{
+  background-color: #217BF4;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 150px;
+  display: block;
+  cursor: pointer;
+  height: 50px;
+}
+
+.mainBtn:hover{
+  background-image: linear-gradient(#217BF4,#1a65c7);
+  border: 2px solid #1a65c7;
+
+}
+
       /*--------------------------------------FOOTER & HEADER LOGO -----------------------------------------------------*/
       .logo{
         display: flex;
@@ -80,22 +100,7 @@ header {
     }
 
     header .menu .btnLogin {
-    margin-left: auto;
-    background-color: #217BF4;
-    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
-    font-weight: bold;
-    border: none;
-    color: white;
-    padding: 10px;
-    border-radius: 14px;
-    width: 123px;
-    height: 50px;
-    display: block;
-    cursor: pointer;
-    }
-
-    header .menu .btnLogin:hover{
-      background-image: linear-gradient(#217BF4,#1a65c7);
+      margin-left: auto;
     }
 
 /*--------------------------------------HOME -----------------------------------------------------*/
@@ -160,25 +165,6 @@ header {
         flex-flow: row;
         flex-direction: row;
         margin-top: 15px;
-      }
-
-      .home .btns .btnLogin {
-        background-color: #217BF4;
-        font-family: "Inter", sans-serif;
-        font-weight: bold;
-        border: none;
-        color: white;
-        padding: 10px;
-        border-radius: 15px;
-        width: 150px;
-        display: block;
-        cursor: pointer;
-        height: 50px;
-      }
-
-      .home .btns .btnLogin:hover{
-        background-image: linear-gradient(#217BF4,#1a65c7);
-        border: 2px solid #1a65c7;
       }
       
       .home .btns .btnInviteFriend:hover{
@@ -435,6 +421,160 @@ header {
       
       
 
+/* --------------------------------------- AVALIACOES --------------------------------------------------------- */
+/* ----- AUTHOR: JEAN ----- */
+
+.avaliacoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.avaliacoes-content{
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.avaliacoes-content .achievement{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: left;
+  max-width: 28%;
+}
+
+.avaliacoes-content .achievement h4{
+  font-family: "Inter";
+  color: #217BF4;
+}
+
+.avaliacoes-content .achievement h1{
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #0A093D;
+  margin-block: 1rem;
+}
+
+.avaliacoes-content .achievement p{
+  font-family: "Inter";
+  color: #656464;
+  line-height: 2rem;
+  margin-bottom: 2.3rem;
+}
+
+.avaliacoes-content .achievement button{
+  width: 11.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avaliacoes-content .achievement button i{
+  font-size: 1.5rem;
+  padding-top: .2rem;
+}
+
+.avaliacoes .boxes{
+  display: flex;
+  align-content: space-between;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.avaliacoes .boxes .box{
+  border: 2px solid;
+  border-color: rgba(212, 220, 228, 0.2);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0.87rem;
+  margin-inline: .8rem;
+}
+
+.box .box-content{
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 2.4rem;
+  font-family: "Inter";
+}
+
+.avaliacoes .boxes .box:hover{
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, .4);
+  transition: 1000ms;
+}
+
+.box .icon-header,
+.box .title{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.box .icon-header i{
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.box .icon-header h4{
+  font-size: 1.2rem;
+}
+
+.box img{
+  position: absolute;
+  margin-left: -1.5rem;
+  width: 7rem;
+  height: 7rem;
+}
+.box img.github{
+  margin-left: -1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.box .title.members p{
+  margin-left: 6rem;
+  margin-bottom: .5rem;
+}
+
+.box .title.awards p{
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+}
+
+.box .content{
+  color: #8C8C8C;
+  width: 16rem;
+  line-height: 1.625rem;
+}
+
+.box .join{
+  background-color: transparent;
+  font-weight: bold;
+  color:#8C8C8C;
+  border: none;
+  font-family: Inter;
+  display: flex;
+  justify-content: left;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.box .join:hover{
+  font-size: 1.15rem;
+  transition: 1000ms;
+  color: #054598;
+}
+
+.destaque{
+  color: #217BF4!important;
+  font-weight: bold;
+}
 
 /*--------------------------------------COMMUNITY SECTION-----------------------------------------------------*/
 
