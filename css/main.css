@@ -339,9 +339,6 @@
         font-weight: bold;
         list-style: none;
         padding: 10px;
-        
-  
-
         }
       
        .sobre-nos-div ul li::before{
@@ -358,5 +355,21 @@
         width: 20px;
         height: 20px;
         }
-      
+
+          
+        .ul-text::after{
+          content: "";
+          position: absolute;
+          background-color: #0A093D;
+          height: 3px;
+          width: 0px;
+          left: 180px;
+          display: block;
+          transition: 0.3s;
+          
+        }
+        
+        .ul-text:hover::after{
+          width: 3%;
+        }
 
