@@ -71,6 +71,12 @@
         cursor: pointer;
         }
 
+        header .menu .btnLogin:hover{
+          background-image: linear-gradient(#217BF4,#1a65c7);
+        }
+
+        
+
 /* HOME */
 
 .home {
@@ -100,15 +106,24 @@
     .home .content .esquerdaHome {
       height: 50%;
       align-items: center;
+      padding-left: 5rem;
     }
     .home .content .direitaHome {
       height: 50%;
       align-items: center;
+      width: 50%;
+      margin-bottom: 12rem;
+      margin-right: 5rem;
+    }
+    
+    .esquerdaHome h1{
+      font-size: 3rem;
+      color: #0A093D;
+
     }
       .home .btnCommunity{
-        background-color: #bfd9fb;
+        background-color: #e6edf5;
         font-family: "Inter", sans-serif;
-        font-weight: bold;
         border: none;
         color: #217BF4;
         padding: 10px;
@@ -139,7 +154,16 @@
         cursor: pointer;
         height: 50px;
       }
+
+      .home .btns .btnLogin:hover{
+        background-image: linear-gradient(#217BF4,#1a65c7);
+        border: 2px solid #1a65c7;
+      }
       
+      .home .btns .btnInviteFriend:hover{
+        border: 2px solid #1a65c7;
+      }
+    
       .home .btns .btnInviteFriend {
         background-color: transparent;
         border: 1px solid #217BF4;
@@ -413,8 +437,31 @@
 
       .sobre-nos-div ul li {
         margin-left: 15px;
-        color: #217BF4
-      }
+        color: #171648;
+        font-weight: bold;
+        list-style: none;
+        padding: 10px;
+        
+  
+
+        }
+      
+       .sobre-nos-div ul li::before{
+        color: #0269f0;
+        content: "•";
+        font-weight: bold;
+        display: flex; 
+        justify-content: center;
+        display: inline-flex;
+        width: 1em;
+        margin-left: -1em; 
+        border-radius: 50%;
+        background-color: #eaeff6;
+        width: 20px;
+        height: 20px;
+        }
+      
+      
 
       
 
@@ -523,11 +570,13 @@
       flex-direction: row;
       gap: 10px;
       align-items: center;
+      cursor: pointer;
     }
 
     .logo img{
       width: 30px;
       height: 30px;
+      
     }
     
     .logo p {
