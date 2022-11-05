@@ -5,73 +5,99 @@
   max-width: 100%;
 }
 
-/* NAVBAR */
+      /*--------------------------------------FOOTER & HEADER LOGO -----------------------------------------------------*/
+      .logo{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+      }
+      .logo img{
+        width: 30px;
+        height: 30px;
+        
+      }
+      
+      .logo p {
+      font-family: 'Poppins';
+      font-size: 20px;
+      line-height: 24px;
+      text-align: left;
+      }
+  
 
-      header {
-      height: 95px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid #ccc;
-      font-family: "Inter", sans-serif;
-      background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+/*--------------------------------------NAVBAR-----------------------------------------------------*/
+
+header {
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 }
 
-      header .menu {
-      justify-content: flex-start;
-      align-items: center;
-      width: 1140px;
-      display: flex;
-      flex-direction: row;
-      }
+  header .menu {
+  justify-content: flex-start;
+  align-items: center;
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  }
 
-      
+  
 
-      header .menu ul {
-      margin-left: 60px;
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-items: center;
+  header .menu ul {
+  margin-left: 60px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+  header .menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
     }
 
-      header .menu ul li a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: black;
-        }
+    header .menu ul li a:hover {
+        font-weight: bolder;
+    }
 
-        header .menu ul li a:hover {
-            font-weight: bolder;
-        }
+    header .menu ul li .active{
+      font-weight: bolder;
+    }
 
-        header .menu ul li .active{
-          font-weight: bolder;
-        }
+    header .menu ul li i {
+      margin-left: 5px;
+    }
 
-        header .menu ul li i {
-          margin-left: 5px;
-        }
+    header .menu .btnLogin {
+    margin-left: auto;
+    background-color: #217BF4;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 14px;
+    width: 123px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    }
 
-        header .menu .btnLogin {
-        margin-left: auto;
-        background-color: #217BF4;
-        box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
-        font-weight: bold;
-        border: none;
-        color: white;
-        padding: 10px;
-        border-radius: 14px;
-        width: 123px;
-        height: 50px;
-        display: block;
-        cursor: pointer;
-        }
+    header .menu .btnLogin:hover{
+      background-image: linear-gradient(#217BF4,#1a65c7);
+    }
 
-/* HOME */
+/*--------------------------------------HOME -----------------------------------------------------*/
 
 .home {
   display: flex;
@@ -100,15 +126,24 @@
     .home .content .esquerdaHome {
       height: 50%;
       align-items: center;
+      padding-left: 5rem;
     }
     .home .content .direitaHome {
       height: 50%;
       align-items: center;
+      width: 50%;
+      margin-bottom: 12rem;
+      margin-right: 5rem;
+    }
+    
+    .esquerdaHome h1{
+      font-size: 3rem;
+      color: #0A093D;
+
     }
       .home .btnCommunity{
-        background-color: #bfd9fb;
+        background-color: #e6edf5;
         font-family: "Inter", sans-serif;
-        font-weight: bold;
         border: none;
         color: #217BF4;
         padding: 10px;
@@ -139,7 +174,16 @@
         cursor: pointer;
         height: 50px;
       }
+
+      .home .btns .btnLogin:hover{
+        background-image: linear-gradient(#217BF4,#1a65c7);
+        border: 2px solid #1a65c7;
+      }
       
+      .home .btns .btnInviteFriend:hover{
+        border: 2px solid #1a65c7;
+      }
+    
       .home .btns .btnInviteFriend {
         background-color: transparent;
         border: 1px solid #217BF4;
@@ -155,7 +199,7 @@
         margin-left: 10px;
       }
 
-      /* HEADER + HOME RESPONISVE */
+/*--------------------------------------HEADER & HOME RESPONSIVE-----------------------------------------------------*/
 
       @media (max-width: 640px) {
         header .menu{
@@ -236,7 +280,101 @@
             }
       }
 
-      /* COMMUNITY SECTION */
+      /*--------------------------------------SOBRENOS -----------------------------------------------------*/ 
+
+      .sobre-nos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 100%;
+        height: 40rem;
+        font-family: 'Inter';
+      }
+
+      .sobre-nos .direita-sobre {
+        display: flex;
+        align-items: center;
+      
+      }
+
+      .sobre-nos .direita-sobre .grid{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sobre-nos .direita-sobre .grid img{
+        width: 200px;
+        height: 200px;
+        border-radius: 1rem;
+      
+
+      }
+
+      .sobre-nos .direita-sobre .video img{
+        width: 300px;
+        height: 350px;
+      }
+      
+      .sobre-nos-div h3{
+        color: #217BF4;
+        padding-bottom: 10px;
+      }
+
+      .sobre-nos-div h1{
+        color: #0A093D;
+        font-size: 2rem;
+      }
+
+      .sobre-nos-div p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #656464;
+        line-height: 29px;
+      }
+
+      .sobre-nos-div ul li {
+        margin-left: 15px;
+        color: #171648;
+        font-weight: bold;
+        list-style: none;
+        padding: 10px;
+        }
+      
+      .sobre-nos-div ul li::before{
+        color: #0269f0;
+        content: "•";
+        font-weight: bold;
+        display: flex; 
+        justify-content: center;
+        display: inline-flex;
+        width: 1em;
+        margin-left: -1em; 
+        border-radius: 50%;
+        background-color: #eaeff6;
+        width: 20px;
+        height: 20px;
+        }
+
+          
+        .ul-text::after{
+          content: "";
+          position: absolute;
+          background-color: #0A093D;
+          height: 3px;
+          width: 0px;
+          left: 180px;
+          display: block;
+          transition: 0.3s;
+          
+        }
+        
+        .ul-text:hover::after{
+          width: 3%;
+        }
+      
+
+
+/*--------------------------------------COMMUNITY SECTION-----------------------------------------------------*/
 
       .comunidade{
         padding: 35px;
@@ -359,37 +497,7 @@
         
       }
 
-      /* SOBRENOS */
-
-      .sobre-nos{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-
-      .sobre-nos .direita-sobre {
-        display: flex;
-        gap: 30px;
-      }
-
-      .sobre-nos .direita-sobre .grid{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .sobre-nos .direita-sobre .grid img{
-        width: 200px;
-        height: 200px;
-
-      }
-
-      .sobre-nos .direita-sobre .video img{
-        width: 300px;
-        height: 500px;
-      }
-
-    
-      /* FOOTER */
+        /*--------------------------------------FOOTER -----------------------------------------------------*/
 
       footer{
         max-width: 100%;
@@ -486,25 +594,6 @@
     
     .sub-footer .copyr{
         font-size: 12px;
-    }
-
-    .logo{
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      align-items: center;
-    }
-
-    .logo img{
-      width: 30px;
-      height: 30px;
-    }
-    
-    .logo p {
-    font-family: 'Poppins';
-    font-size: 20px;
-    line-height: 24px;
-    text-align: left;
     }
 
     .sub-footer .socials img{
