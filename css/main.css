@@ -280,7 +280,28 @@ header {
             }
       }
 
-      /*--------------------------------------SOBRENOS -----------------------------------------------------*/ 
+      /*--------------------------------------CSS RECUPERADO-----------------------------------------------------*/
+      .logo{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+    }
+     .logo img{
+      width: 30px;
+      height: 30px;
+      
+    }
+    
+    .logo p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    }
+    
+        /* SOBRENOS */
 
       .sobre-nos{
         display: flex;
@@ -638,18 +659,61 @@ header {
         border-radius: 12px;
     }
       
-    }
-
-    @media (max-width: 500px){
-
-      .sub-footer{
-        height: max-content;
-        padding: 30px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 30px;
+      .sobre-nos-div h3{
+        color: #217BF4;
+        padding-bottom: 10px;
       }
 
-    }
+      .sobre-nos-div h1{
+        color: #0A093D;
+        font-size: 2rem;
+      }
 
+      .sobre-nos-div p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #656464;
+        line-height: 29px;
+      }
+
+      .sobre-nos-div ul li {
+        margin-left: 15px;
+        color: #171648;
+        font-weight: bold;
+        list-style: none;
+        padding: 10px;
+        }
+      
+       .sobre-nos-div ul li::before{
+        color: #0269f0;
+        content: "•";
+        font-weight: bold;
+        display: flex; 
+        justify-content: center;
+        display: inline-flex;
+        width: 1em;
+        margin-left: -1em; 
+        border-radius: 50%;
+        background-color: #eaeff6;
+        width: 20px;
+        height: 20px;
+        }
+
+          
+        .ul-text::after{
+          content: "";
+          position: absolute;
+          background-color: #0A093D;
+          height: 3px;
+          width: 0px;
+          left: 180px;
+          display: block;
+          transition: 0.3s;
+          
+        }
+        
+        .ul-text:hover::after{
+          width: 3%;
+        }
+
+      }
