@@ -109,17 +109,17 @@ header {
   max-width: 100%;
   background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
   font-family: "Inter", sans-serif;
-  height: 580px;
+
 }
 
-.home .content {
+.home {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.home .content .esquerdaHome {
+.home .esquerdaHome {
     align-items: center;
     padding-left: 5rem;
     display: flex;
@@ -192,9 +192,11 @@ header {
       align-items: center;
     }
 
-  .home .content .direitaHome img{
-      width: 580px;
-      height: 500px;
+  .home .direitaHome img{
+    max-inline-size: 100%;
+    block-size: 500px;
+    object-fit: contain;
+    object-position: center;
     }
     
 
@@ -248,34 +250,41 @@ header {
         }
       }
 
-      @media (max-width:1170px) {
-      
-      .home{
-        max-width: 100%;
-        height: 800px;
-      }
-      .home .content{
-        margin-top: 100px;
-        flex-direction: column;
-        gap: 30px;
-      }
-
-      .home .content .direitaHome img{
-        margin-top: 50px;
-        height: 300px;
-      }
-      }
-
-      @media (max-width:530px) {
-        .home .content .direitaHome img{
-          align-self: center;
-          margin-top: 70px;
-          margin-left: 50px;
-          height: 200px;
+      @media (max-width:870px) {
+        .home{
+          max-width: 100%;
+          margin-top: 30px;
+        }
+        .home {
+          flex-direction: column;
+        }
+        
+        .home .content .esquerdaHome{
+          justify-content: center;
+          align-items: center;
+          text-align: center;
         }
       }
 
-    
+      @media (max-width:491px) {
+        .home {
+          margin-top: 20px;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+
+
+        .home .esquerdaHome h1{
+          font-size: 31px;
+          line-height: 40px;
+        }
+      
+        .home .esquerdaHome p{
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+
         /* SOBRENOS */
 
       .sobre-nos{
@@ -311,6 +320,7 @@ header {
         height: 350px;
       }
       
+
       .sobre-nos-div h3{
         color: #217BF4;
         padding-bottom: 10px;
@@ -368,62 +378,69 @@ header {
           width: 3%;
         }
 
-             
-      .sobre-nos-div h3{
-        color: #217BF4;
-        padding-bottom: 10px;
-      }
+        @media (max-width:985px) {
 
-      .sobre-nos-div h1{
-        color: #0A093D;
-        font-size: 2rem;
-      }
+          .sobre-nos{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 780px;
+          }
 
-      .sobre-nos-div p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #656464;
-        line-height: 29px;
-      }
+          .sobre-nos .direita-sobre {
+            margin-right: 30px;
+            margin-top: 40px;
+            align-self: center;
+            align-items: center;
+          
+          }
 
-      .sobre-nos-div ul li {
-        margin-left: 15px;
-        color: #171648;
-        font-weight: bold;
-        list-style: none;
-        padding: 10px;
-        }
-      
-       .sobre-nos-div ul li::before{
-        color: #0269f0;
-        content: "•";
-        font-weight: bold;
-        display: flex; 
-        justify-content: center;
-        display: inline-flex;
-        width: 1em;
-        margin-left: -1em; 
-        border-radius: 50%;
-        background-color: #eaeff6;
-        width: 20px;
-        height: 20px;
-        }
+          .sobre-nos .direita-sobre .grid img{
+            width: 170px;
+            height: 170px;
+          }
+
+          .sobre-nos .direita-sobre .video img{
+            width: 300px;
+            height: 300px;
+          }
+
 
           
-        .ul-text::after{
-          content: "";
-          position: absolute;
-          background-color: #0A093D;
-          height: 3px;
-          width: 0px;
-          left: 180px;
-          display: block;
-          transition: 0.3s;
-          
         }
-        
-        .ul-text:hover::after{
-          width: 3%;
+
+        @media (max-width:400px) {
+          .sobre-nos{
+            height: max-content;
+          }
+
+          .sobre-nos .sobre-nos-div h3{
+            text-align: center;
+          }
+
+          .sobre-nos .sobre-nos-div h1{
+            text-align: center;
+            text-indent: 4px;
+          }
+
+          .sobre-nos-div p{
+            text-align: center;
+          }
+
+          .sobre-nos-div ul li {
+            text-align: center;
+          }
+
+          .sobre-nos .direita-sobre{
+            flex-direction: column;
+          }
+
+          .sobre-nos .direita-sobre .video img{
+            height: 250px;
+          }
+
         }
 
       
@@ -433,6 +450,7 @@ header {
 /* ----- AUTHOR: JEAN ----- */
 
 .avaliacoes{
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -646,7 +664,8 @@ header {
       }
 
       .comunidade .layout .row:hover{
-        transform: scale(1.09);
+        box-shadow: 0px 26px 49px rgba(146, 165, 184, .4);
+        transition: 1000ms;
       }
 
       .comunidade .layout .row img{
