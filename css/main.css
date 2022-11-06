@@ -106,85 +106,97 @@ header {
 /*--------------------------------------HOME -----------------------------------------------------*/
 
 .home {
+  max-width: 100%;
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+  font-family: "Inter", sans-serif;
+  height: 580px;
+}
+
+.home .content {
   display: flex;
-  flex-flow: row;
   flex-direction: row;
   align-items: center;
-  justify-items: center;
   justify-content: center;
-  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 }
-  .home h1{
-    font-family: "Inter", sans-serif;
-    color: #217BF4;
-    font-size: 2em;
-  }
-  .home p{
-    font-family: "Inter", sans-serif;
-    color: black;
-    font-size: 1em;
-  }
-  .home .content {
-    height: 700px;
-    display: flex;
+
+.home .content .esquerdaHome {
     align-items: center;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
-    .home .content .esquerdaHome {
-      height: 50%;
+
+  .home .btnCommunity{
+    background-color: #e6edf5;
+    border: none;
+    color: #217BF4;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 210px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .home .esquerdaHome h1{
+    color: #0A093D;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 13px;
+  }
+
+  .home .esquerdaHome p{
+    color: #656464;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 13px; 
+  }
+
+
+  .home .btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .home .btns .btnLogin{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    height: 55px;
+  }
+  
+  .home .btns .btnInviteFriend {
+    background-color: transparent;
+    border: 1px solid #217BF4;
+    color: #217BF4;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 15px;
+    width: 150px;
+    cursor: pointer;
+    height: 55px;
+
+  }
+
+  .home .btns .btnInviteFriend:hover{
+    border: 2px solid #1a65c7;
+  }
+
+  .home .content .direitaHome {
       align-items: center;
-      padding-left: 5rem;
     }
-    .home .content .direitaHome {
-      height: 50%;
-      align-items: center;
-      width: 50%;
-      margin-bottom: 12rem;
-      margin-right: 5rem;
+
+  .home .content .direitaHome img{
+      width: 580px;
+      height: 500px;
     }
     
-    .esquerdaHome h1{
-      font-size: 3rem;
-      color: #0A093D;
-
-    }
-      .home .btnCommunity{
-        background-color: #e6edf5;
-        font-family: "Inter", sans-serif;
-        border: none;
-        color: #217BF4;
-        padding: 10px;
-        border-radius: 15px;
-        width: 200px;
-        height: 50px;
-        display: block;
-        cursor: pointer;
-      }
-
-      .home .btns{
-        display: flex;
-        flex-flow: row;
-        flex-direction: row;
-        margin-top: 15px;
-      }
-      
-      .home .btns .btnInviteFriend:hover{
-        border: 2px solid #1a65c7;
-      }
-    
-      .home .btns .btnInviteFriend {
-        background-color: transparent;
-        border: 1px solid #217BF4;
-        color: #217BF4;
-        font-family: "Inter", sans-serif;
-        font-weight: bold;
-        padding: 10px;
-        border-radius: 15px;
-        width: 150px;
-        display: block;
-        cursor: pointer;
-        height: 50px;
-        margin-left: 10px;
-      }
 
 /*--------------------------------------HEADER & HOME RESPONSIVE-----------------------------------------------------*/
 
@@ -234,37 +246,33 @@ header {
           margin-left: 30px;
           margin-right: 30px;
         }
-  
-  
-        /*Banner da Home*/
-        .home {
-          display: flex;
-          flex-flow: column;
-          flex-direction: column;
-          align-items: center;
-          justify-items: center;
-          justify-content: center;
-          background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+      }
+
+      @media (max-width:1170px) {
+      
+      .home{
+        max-width: 100%;
+        height: 800px;
+      }
+      .home .content{
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .home .content .direitaHome img{
+        margin-top: 50px;
+        height: 300px;
+      }
+      }
+
+      @media (max-width:530px) {
+        .home .content .direitaHome img{
+          align-self: center;
+          margin-top: 70px;
+          margin-left: 50px;
+          height: 200px;
         }
-          .home .content {
-            height: 700px;
-            display: flex;
-            align-items: center;
-            flex-flow: column;
-            flex-direction: column;
-            padding: 20px;
-          }
-            .home .content .esquerdaHome {
-              height: 50%;
-              align-items: center;
-            }
-            .home .content .direitaHome {
-              height: 50%;
-              align-items: center;
-            }
-            .home .content .direitaHome img{
-              margin-top: -50px;
-            }
       }
 
     
