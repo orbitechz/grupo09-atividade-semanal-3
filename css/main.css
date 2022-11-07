@@ -301,7 +301,7 @@ header {
     text-align: left;
     }
     
-        /* SOBRENOS */
+          /* SOBRENOS */
 
       .sobre-nos{
         display: flex;
@@ -361,7 +361,7 @@ header {
         padding: 10px;
         }
       
-      .sobre-nos-div ul li::before{
+       .sobre-nos-div ul li::before{
         color: #0269f0;
         content: "•";
         font-weight: bold;
@@ -715,5 +715,143 @@ header {
         .ul-text:hover::after{
           width: 3%;
         }
+
+      }
+          /*--------------------------------------Publicidade -----------------------------------------------------*/
+
+
+      .cor-fundo{
+
+        background-color: #E5F0FD;
+        align-items: center;
+        height: 29rem;
+
+
+
+      }
+      .cor-fundo .content{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+      } 
+        .cor-fundo .content .esquerda{
+          flex: 50%;
+          align-items: center;
+          padding-left: 10.9rem;
+        }
+        .cor-fundo .content .direita{
+          flex: 50%;
+          align-items: center;
+        }
+
+      
+      .text_publicidade{
+
+        padding: 2.1875rem;
+        max-width: 100%;
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        font-family: Inter;
+      }
+
+        .text_publicidade .imgstextos{
+        display: flex;
+        flex-direction: row;
+      }
+
+      
+
+      .text_publicidade h3 {
+        color: #217BF4;
+        font-weight: 500;
+        font-size: 14px;
+        }
+
+      .text_publicidade .publi_h2 {
+
+        color: #0A093D;
+        font-size: 2.2rem;
+        line-height: 1.4375rem;
+        font-weight: 56.25rem;
+
+        }
+
+      .text_publicidade .publi_p {
+
+        margin-top: 20px;
+        color: #656464;
+        line-height: 29px;
+
+
+      }
+
+
+
+      .imagens-app {
+
+        display: flex;
+        align-items: flex-start;
+        padding-left: 195px;
+        justify-content: space-around;
+        flex: 50%;
+      }
+
+
+
+      .cor-fundo .imagens-app .celular {
+        
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        bottom: 0%;
+        position: relative;
+        margin-right: 10rem;
+      }
+
+
+                /*--------------------------------------Noticias -----------------------------------------------------*/
+
+
+      .noticias {
+        font-family: Inter;
+
+      }
+
+      .noticias h3{
+        text-align: center;
+        color: #217BF4;
+        font-weight: 500;
+        font-size: 13px;
+        margin-top: 30px;
+      }
+      .noticias h2 {
+
+        color: #0A093D;
+        font-size: 30px;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .noticias .imagens-noticias{
+
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+      }
+
+      .noticias .text-img {
+
+        font-weight: bold;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+
 
       }
