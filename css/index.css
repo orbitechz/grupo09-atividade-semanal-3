@@ -1,3 +1,7 @@
+:root{
+  --font-principal: "Inter"
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,7 +11,7 @@
 
 .mainBtn{
   background-color: #217BF4;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-principal), sans-serif;
   font-weight: bold;
   border: none;
   color: white;
@@ -57,7 +61,7 @@ header {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #ccc;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-principal), sans-serif;
   background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 }
 
@@ -106,85 +110,102 @@ header {
 /*--------------------------------------HOME -----------------------------------------------------*/
 
 .home {
+  max-width: 100%;
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+  font-family: var(--font-principal), sans-serif;
+
+}
+
+.home {
   display: flex;
-  flex-flow: row;
   flex-direction: row;
   align-items: center;
-  justify-items: center;
   justify-content: center;
-  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 }
-  .home h1{
-    font-family: "Inter", sans-serif;
-    color: #217BF4;
-    font-size: 2em;
-  }
-  .home p{
-    font-family: "Inter", sans-serif;
-    color: black;
-    font-size: 1em;
-  }
-  .home .content {
-    height: 700px;
-    display: flex;
+
+.home .esquerdaHome {
+  flex: 50%;
     align-items: center;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
-    .home .content .esquerdaHome {
-      height: 50%;
+
+  .home .btnCommunity{
+    background-color: #e6edf5;
+    border: none;
+    color: #217BF4;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 210px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .home .esquerdaHome h1{
+    color: #0A093D;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 13px;
+  }
+
+  .home .esquerdaHome p{
+    color: #656464;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 13px; 
+  }
+
+
+  .home .btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .home .btns .btnLogin{
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 14px;
+    height: 55px;
+  }
+  
+  .home .btns .btnInviteFriend {
+    background-color: transparent;
+    border: 1px solid #217BF4;
+    color: #217BF4;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 15px;
+    width: 150px;
+    cursor: pointer;
+    height: 55px;
+    margin-left: 10px;
+  }
+
+  .home .btns .btnInviteFriend:hover{
+    border: 2px solid #1a65c7;
+  }
+
+  .home .content .direitaHome {
+    flex: 50%;
       align-items: center;
-      padding-left: 5rem;
     }
-    .home .content .direitaHome {
-      height: 50%;
-      align-items: center;
-      width: 50%;
-      margin-bottom: 12rem;
-      margin-right: 5rem;
+
+  .home .direitaHome img{
+    margin-right: 30px;
+    max-inline-size: 100%;
+    block-size: 400px;
+    object-fit: contain;
+    object-position: center;
     }
     
-    .esquerdaHome h1{
-      font-size: 3rem;
-      color: #0A093D;
-
-    }
-      .home .btnCommunity{
-        background-color: #e6edf5;
-        font-family: "Inter", sans-serif;
-        border: none;
-        color: #217BF4;
-        padding: 10px;
-        border-radius: 15px;
-        width: 200px;
-        height: 50px;
-        display: block;
-        cursor: pointer;
-      }
-
-      .home .btns{
-        display: flex;
-        flex-flow: row;
-        flex-direction: row;
-        margin-top: 15px;
-      }
-      
-      .home .btns .btnInviteFriend:hover{
-        border: 2px solid #1a65c7;
-      }
-    
-      .home .btns .btnInviteFriend {
-        background-color: transparent;
-        border: 1px solid #217BF4;
-        color: #217BF4;
-        font-family: "Inter", sans-serif;
-        font-weight: bold;
-        padding: 10px;
-        border-radius: 15px;
-        width: 150px;
-        display: block;
-        cursor: pointer;
-        height: 50px;
-        margin-left: 10px;
-      }
 
 /*--------------------------------------HEADER & HOME RESPONSIVE-----------------------------------------------------*/
 
@@ -234,41 +255,62 @@ header {
           margin-left: 30px;
           margin-right: 30px;
         }
-  
-  
-        /*Banner da Home*/
-        .home {
-          display: flex;
-          flex-flow: column;
-          flex-direction: column;
-          align-items: center;
-          justify-items: center;
-          justify-content: center;
-          background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
-        }
-          .home .content {
-            height: 700px;
-            display: flex;
-            align-items: center;
-            flex-flow: column;
-            flex-direction: column;
-            padding: 20px;
-          }
-            .home .content .esquerdaHome {
-              height: 50%;
-              align-items: center;
-            }
-            .home .content .direitaHome {
-              height: 50%;
-              align-items: center;
-            }
-            .home .content .direitaHome img{
-              margin-top: -50px;
-            }
       }
 
-    
+      @media (max-width:870px) {
+        .home{
+          max-width: 100%;
+        }
+        .home {
+          flex-direction: column;
+          margin-top: 10px;
+        }
+        
+        .home .content .esquerdaHome{
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .home .direitaHome img{
+          block-size: 350px;
+        }
+      
+      }
+
+      @media (max-width:491px) {
+        .home {
+          max-width: 100%;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        
+      
+        .home .esquerdaHome h1{
+          font-size: 31px;
+          line-height: 40px;
+        }
+      
+        .home .esquerdaHome p{
+          font-size: 15px;
+          line-height: 18px;
+        }
+
+        .home .direitaHome img{
+          block-size: 300px;
+        }
+      }
+
         /* SOBRENOS */
+    
+    
+    .logo p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    }
+    
+          /* SOBRENOS */
 
       .sobre-nos{
         display: flex;
@@ -276,7 +318,7 @@ header {
         align-items: center;
         max-width: 100%;
         height: 40rem;
-        font-family: 'Inter';
+        font-family: var(--font-principal);
       }
 
       .sobre-nos .direita-sobre {
@@ -303,6 +345,7 @@ header {
         height: 350px;
       }
       
+
       .sobre-nos-div h3{
         color: #217BF4;
         padding-bottom: 10px;
@@ -335,7 +378,6 @@ header {
         display: flex; 
         justify-content: center;
         display: inline-flex;
-        width: 1em;
         margin-left: -1em; 
         border-radius: 50%;
         background-color: #eaeff6;
@@ -343,7 +385,6 @@ header {
         height: 20px;
         }
 
-          
         .ul-text::after{
           content: "";
           position: absolute;
@@ -360,71 +401,80 @@ header {
           width: 3%;
         }
 
-             
-      .sobre-nos-div h3{
-        color: #217BF4;
-        padding-bottom: 10px;
-      }
+        @media (max-width:985px) {
 
-      .sobre-nos-div h1{
-        color: #0A093D;
-        font-size: 2rem;
-      }
+          .sobre-nos{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 780px;
+          }
 
-      .sobre-nos-div p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #656464;
-        line-height: 29px;
-      }
+          .sobre-nos .direita-sobre {
+            margin-right: 30px;
+            margin-top: 40px;
+            align-self: center;
+            align-items: center;
+          
+          }
 
-      .sobre-nos-div ul li {
-        margin-left: 15px;
-        color: #171648;
-        font-weight: bold;
-        list-style: none;
-        padding: 10px;
-        }
-      
-       .sobre-nos-div ul li::before{
-        color: #0269f0;
-        content: "•";
-        font-weight: bold;
-        display: flex; 
-        justify-content: center;
-        display: inline-flex;
-        width: 1em;
-        margin-left: -1em; 
-        border-radius: 50%;
-        background-color: #eaeff6;
-        width: 20px;
-        height: 20px;
-        }
+          .sobre-nos .direita-sobre .grid img{
+            width: 170px;
+            height: 170px;
+          }
+
+          .sobre-nos .direita-sobre .video img{
+            width: 300px;
+            height: 300px;
+          }
+
 
           
-        .ul-text::after{
-          content: "";
-          position: absolute;
-          background-color: #0A093D;
-          height: 3px;
-          width: 0px;
-          left: 180px;
-          display: block;
-          transition: 0.3s;
-          
         }
-        
-        .ul-text:hover::after{
-          width: 3%;
+
+        @media (max-width:400px) {
+          .sobre-nos{
+            height: max-content;
+          }
+
+          .sobre-nos .sobre-nos-div h3{
+            text-align: center;
+          }
+
+          .sobre-nos .sobre-nos-div h1{
+            text-align: center;
+            text-indent: 4px;
+          }
+
+          .sobre-nos-div p{
+            text-align: center;
+          }
+
+          .sobre-nos-div ul li {
+            text-align: center;
+          }
+
+          .sobre-nos .direita-sobre{
+            margin-left: 30px;
+            flex-direction: column;
+          }
+
+          .sobre-nos .direita-sobre .video img{
+            height: 250px;
+          }
+
         }
 
       
       
 
 /* --------------------------------------- AVALIACOES --------------------------------------------------------- */
-/* ----- AUTHOR: JEAN ----- */
+/* ----- AUTOR: JEAN ----- */
 
 .avaliacoes{
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,9 +483,11 @@ header {
 
 .avaliacoes-content{
   margin-bottom: 8rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .avaliacoes-content .achievement{
@@ -447,12 +499,12 @@ header {
 }
 
 .avaliacoes-content .achievement h4{
-  font-family: "Inter";
+  font-family: var(--font-principal);
   color: #217BF4;
 }
 
 .avaliacoes-content .achievement h1{
-  font-family: "Inter";
+  font-family: var(--font-principal);
   font-weight: bold;
   font-size: 2.2rem;
   color: #0A093D;
@@ -460,7 +512,7 @@ header {
 }
 
 .avaliacoes-content .achievement p{
-  font-family: "Inter";
+  font-family: var(--font-principal);
   color: #656464;
   line-height: 2rem;
   margin-bottom: 2.3rem;
@@ -478,33 +530,34 @@ header {
   padding-top: .2rem;
 }
 
-.avaliacoes .boxes{
+.boxes{
   display: flex;
   align-content: space-between;
-  margin-left: 5rem;
-  margin-right: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.avaliacoes .boxes .box{
+.boxes .box{
   border: 2px solid;
   border-color: rgba(212, 220, 228, 0.2);
   height: 20rem;
   width: 20rem;
   border-radius: 0.87rem;
   margin-inline: .8rem;
+  margin-bottom: 1rem;
 }
 
 .box .box-content{
+  margin-left: 2rem;
   height: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 2.4rem;
-  font-family: "Inter";
+  font-family: var(--font-principal);
 }
 
-.avaliacoes .boxes .box:hover{
+.boxes .box:hover{
   box-shadow: 0px 26px 49px rgba(146, 165, 184, .4);
   transition: 1000ms;
 }
@@ -558,7 +611,7 @@ header {
   font-weight: bold;
   color:#8C8C8C;
   border: none;
-  font-family: Inter;
+  font-family: var(--font-principal);
   display: flex;
   justify-content: left;
   font-size: 1.1rem;
@@ -574,6 +627,25 @@ header {
 .destaque{
   color: #217BF4!important;
   font-weight: bold;
+  font-family: var(--font-principal);
+}
+
+@media (max-width:1024px) {
+  .avaliacoes-content .achievement{
+    max-width: max-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: 2rem;
+  }
+  .membros h1{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem!important;
+  }
+  
+  .membros p{
+    width: 80%!important;
+  }
 }
 
 /*--------------------------------------COMMUNITY SECTION-----------------------------------------------------*/
@@ -592,7 +664,7 @@ header {
 
       .comunidade .com-text{
         text-align: center;
-        font-family: Inter;
+        font-family: var(--font-principal);
 
       }
 
@@ -638,7 +710,8 @@ header {
       }
 
       .comunidade .layout .row:hover{
-        transform: scale(1.09);
+        box-shadow: 0px 26px 49px rgba(146, 165, 184, .4);
+        transition: 1000ms;
       }
 
       .comunidade .layout .row img{
@@ -652,7 +725,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-family: Inter;
+        font-family: var(--font-principal);
       }
 
       .comunidade .layout .row .text_layout .com-text_main{
@@ -699,7 +772,103 @@ header {
         
       }
 
-        /*--------------------------------------FOOTER -----------------------------------------------------*/
+/* -------------------------------------------- MEMBROS --------------------------------------------  */
+/* AUTOR: JEAN */
+
+.membros{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-principal);
+}
+.membros h4{
+  margin-top: 2rem;
+  margin-bottom: .625rem;
+}
+.membros h1{
+  color: #0A093D;
+  font-size: 2rem;
+  margin-bottom: 1.125rem;
+}
+.membros p{
+  color: #656464;
+  width: 35%;
+  text-align: center;
+  line-height: 1.75rem;
+  margin-bottom: 2.365rem;
+}
+
+.members-buttons {
+  background-color: #dee4f760;
+  border-radius: 14px;
+  width: 29rem;
+  height: 4.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.members-buttons button{
+  border: none;
+  font-family: var(--font-principal);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+  transition: 500ms;
+}
+.members-buttons button:hover{
+  background-image: none;
+  border: none;
+
+}
+.members-buttons button.disabled:hover{
+  font-size: 1.2rem;
+  transition: 1000ms;
+}
+
+
+.members-buttons .disabled{
+  background-color: transparent;
+  color: #2f2c4ac6;
+
+}
+.membros .boxes{
+  margin-bottom: 8rem;
+}
+
+.membros .box{
+  width: 16rem;
+  height: 19rem;
+}
+
+.membros .box .box-content{
+  align-items: center;
+  margin-left: 0;
+  justify-content: space-around;
+
+}
+
+.membros .box .box-content img{
+  position: inherit;
+  margin: 0;
+  height: 10rem;
+  width: 10rem;
+  margin-top: 1.5rem;
+}
+
+.membros .box .box-content h2{
+  font-size: 1.5rem;
+  color: #2F2C4A;
+
+}
+
+
+
+/*--------------------------------------FOOTER -----------------------------------------------------*/
 
       footer{
         max-width: 100%;
@@ -711,7 +880,7 @@ header {
         justify-content: space-evenly;
         gap: 40px;
         padding: 40px;
-        font-family: 'Inter';
+        font-family: var(--font-principal);
         background-color: #2B2B39;
         color: #fff;
     }
@@ -790,7 +959,7 @@ header {
         align-items: center;
         background-color: #20202D;
         color: #fff;
-        font-family: 'Inter';
+        font-family: var(--font-principal);
         height: 76px;
     }
     
@@ -852,4 +1021,237 @@ header {
         position: relative;
         border-radius: 12px;
     }
-  }
+      
+        }
+
+    
+          /*--------------------------------------Publicidade -----------------------------------------------------*/
+
+
+      .cor-fundo{
+
+        background-color: #E5F0FD;
+        align-items: center;
+        height: 29rem;
+
+      }
+      .cor-fundo .content{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      } 
+        .cor-fundo .content .esquerda{
+          align-items: center;
+          flex: 50%;
+          padding-left: 11rem;
+        }
+
+        .cor-fundo .content .direita{
+          flex: 50%;
+          align-items: center;
+        }
+
+        .text_publicidade{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        font-family: Inter;
+      }
+
+        .text_publicidade .imgstextos{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .text_publicidade .imgstextos .Store{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        border: none;
+        width: 146px;
+        height: 52px;
+      }
+
+      .text_publicidade .imgstextos .AppleStore{
+        color: #000;
+        background-color: #FFFFFF;
+      }
+
+      .text_publicidade .imgstextos .Store .btn-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .text_publicidade .imgstextos .Store .btn-head{
+        font-weight: 200;
+        font-size: 11px;
+        color: #8C8C8C;
+      }
+
+      .text_publicidade .imgstextos .Store .btn-main{
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .text_publicidade .imgstextos .PlayStore{
+        color: #fff;
+        background-color: #2c2b50;
+      }
+
+
+      .text_publicidade .imgstextos .Store i{
+        font-size: 20px;
+      }
+
+
+      .text_publicidade h3 {
+        color: #217BF4;
+        font-weight: 500;
+        font-size: 14px;
+        }
+
+      .text_publicidade .publi_h2 {
+        color: #0A093D;
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 56.25rem;
+
+        }
+
+      .text_publicidade .publi_p {
+        margin-top: 7px;
+        color: #656464;
+        line-height: 26px;
+      }
+
+      @media (max-width:990px) {
+        .cor-fundo {
+          max-width: 100%;
+          height: max-content;
+        }
+        .cor-fundo .content{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .cor-fundo .content .esquerda{
+          margin-right: 140px;
+          margin-top: 30px;
+        }
+        
+
+      }
+
+      @media (max-width:465px){
+        .text_publicidade .imgstextos{
+          flex-direction: column;
+
+        }
+      }
+
+      @media (max-width:359px){
+        .cor-fundo .content .esquerda .text_publicidade{
+          margin-right: 40px;
+          text-align: center;
+        }
+        .text_publicidade .imgstextos .Store{
+          height: 122px;
+        }
+
+      }
+
+
+
+                /*--------------------------------------Noticias -----------------------------------------------------*/
+
+
+      .noticias {
+        max-width: 100%;
+        font-family: Inter;
+
+      }
+
+      .noticias h3{
+        text-align: center;
+        color: #217BF4;
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 30px;
+      }
+      .noticias h2 {
+        color: #0A093D;
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .noticias .content{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+      }
+      
+      .content .one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      .one img{
+        width: 240px;
+        height: 230px;
+
+      }
+        .one .border{
+          width:39px;
+          height:0.1px;
+          border: 1px solid #FFAF2E;
+          background-color: #FFAF2E;
+          margin-top: 10px;
+        }
+
+        .one .aline{
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+        }
+
+        .one .aline p{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+        color: #2F2C4A;
+
+
+        }
+
+      .noticias .continue {
+        color: #217BF4;
+        text-decoration: none;
+        cursor: pointer;
+
+      }
+        
+
+      @media (max-width:760px) {
+        .noticias .content{
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+
+
