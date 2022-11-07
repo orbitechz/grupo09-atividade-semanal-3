@@ -168,7 +168,7 @@ header {
   }
 
   .home .btns .btnLogin{
-    font-weight: 400;
+    font-weight: 200;
     font-size: 14px;
     line-height: 14px;
     height: 55px;
@@ -185,7 +185,7 @@ header {
     width: 150px;
     cursor: pointer;
     height: 55px;
-
+    margin-left: 10px;
   }
 
   .home .btns .btnInviteFriend:hover{
@@ -257,10 +257,10 @@ header {
       @media (max-width:870px) {
         .home{
           max-width: 100%;
-          margin-top: 30px;
         }
         .home {
           flex-direction: column;
+          margin-top: 10px;
         }
         
         .home .content .esquerdaHome{
@@ -268,11 +268,15 @@ header {
           align-items: center;
           text-align: center;
         }
+        .home .direitaHome img{
+          block-size: 350px;
+        }
+      
       }
 
       @media (max-width:491px) {
         .home {
-          margin-top: 20px;
+          max-width: 100%;
           justify-content: flex-start;
           align-items: flex-start;
         }
@@ -286,6 +290,10 @@ header {
         .home .esquerdaHome p{
           font-size: 15px;
           line-height: 18px;
+        }
+
+        .home .direitaHome img{
+          block-size: 300px;
         }
       }
 
@@ -360,14 +368,13 @@ header {
         padding: 10px;
         }
       
-       .sobre-nos-div ul li::before{
+      .sobre-nos-div ul li::before{
         color: #0269f0;
         content: "•";
         font-weight: bold;
         display: flex; 
         justify-content: center;
         display: inline-flex;
-        width: 1em;
         margin-left: -1em; 
         border-radius: 50%;
         background-color: #eaeff6;
@@ -375,7 +382,6 @@ header {
         height: 20px;
         }
 
-          
         .ul-text::after{
           content: "";
           position: absolute;
@@ -478,7 +484,6 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 100%;
 }
 
 .avaliacoes-content .achievement{
@@ -524,9 +529,8 @@ header {
 .boxes{
   display: flex;
   align-content: space-between;
-  margin-left: 5rem;
-  margin-right: 3rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .boxes .box{
@@ -536,9 +540,11 @@ header {
   width: 20rem;
   border-radius: 0.87rem;
   margin-inline: .8rem;
+  margin-bottom: 1rem;
 }
 
 .box .box-content{
+  margin-left: 2rem;
   height: 100%;
   max-width: 100%;
   display: flex;
@@ -618,6 +624,24 @@ header {
   color: #217BF4!important;
   font-weight: bold;
   font-family: var(--font-principal);
+}
+
+@media (max-width:1024px) {
+  .avaliacoes-content .achievement{
+    max-width: max-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: 2rem;
+  }
+  .membros h1{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem!important;
+  }
+  
+  .membros p{
+    width: 80%!important;
+  }
 }
 
 /*--------------------------------------COMMUNITY SECTION-----------------------------------------------------*/
@@ -994,64 +1018,9 @@ header {
         border-radius: 12px;
     }
       
-      .sobre-nos-div h3{
-        color: #217BF4;
-        padding-bottom: 10px;
-      }
-
-      .sobre-nos-div h1{
-        color: #0A093D;
-        font-size: 2rem;
-      }
-
-      .sobre-nos-div p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #656464;
-        line-height: 29px;
-      }
-
-      .sobre-nos-div ul li {
-        margin-left: 15px;
-        color: #171648;
-        font-weight: bold;
-        list-style: none;
-        padding: 10px;
-        }
-      
-       .sobre-nos-div ul li::before{
-        color: #0269f0;
-        content: "•";
-        font-weight: bold;
-        display: flex; 
-        justify-content: center;
-        display: inline-flex;
-        width: 1em;
-        margin-left: -1em; 
-        border-radius: 50%;
-        background-color: #eaeff6;
-        width: 20px;
-        height: 20px;
         }
 
-          
-        .ul-text::after{
-          content: "";
-          position: absolute;
-          background-color: #0A093D;
-          height: 3px;
-          width: 0px;
-          left: 180px;
-          display: block;
-          transition: 0.3s;
-          
-        }
-        
-        .ul-text:hover::after{
-          width: 3%;
-        }
-
-      }
+    
           /*--------------------------------------Publicidade -----------------------------------------------------*/
 
 
@@ -1061,33 +1030,28 @@ header {
         align-items: center;
         height: 29rem;
 
-
-
       }
       .cor-fundo .content{
-        width: 100%;
-        align-items: center;
+        max-width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
 
       } 
         .cor-fundo .content .esquerda{
-          flex: 50%;
           align-items: center;
-          padding-left: 10.9rem;
+          flex: 50%;
+          padding-left: 11rem;
         }
+
         .cor-fundo .content .direita{
           flex: 50%;
           align-items: center;
         }
 
-      
-      .text_publicidade{
-
-        padding: 2.1875rem;
+        .text_publicidade{
         max-width: 100%;
         display: flex;
-        flex: 50%;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 1rem;
@@ -1098,9 +1062,53 @@ header {
         .text_publicidade .imgstextos{
         display: flex;
         flex-direction: row;
+        gap: 10px;
       }
 
-      
+      .text_publicidade .imgstextos .Store{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        border: none;
+        width: 146px;
+        height: 52px;
+      }
+
+      .text_publicidade .imgstextos .AppleStore{
+        color: #000;
+        background-color: #FFFFFF;
+      }
+
+      .text_publicidade .imgstextos .Store .btn-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .text_publicidade .imgstextos .Store .btn-head{
+        font-weight: 200;
+        font-size: 11px;
+        color: #8C8C8C;
+      }
+
+      .text_publicidade .imgstextos .Store .btn-main{
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .text_publicidade .imgstextos .PlayStore{
+        color: #fff;
+        background-color: #2c2b50;
+      }
+
+
+      .text_publicidade .imgstextos .Store i{
+        font-size: 20px;
+      }
+
 
       .text_publicidade h3 {
         color: #217BF4;
@@ -1109,45 +1117,55 @@ header {
         }
 
       .text_publicidade .publi_h2 {
-
         color: #0A093D;
-        font-size: 2.2rem;
-        line-height: 1.4375rem;
+        font-size: 36px;
+        line-height: 42px;
         font-weight: 56.25rem;
 
         }
 
       .text_publicidade .publi_p {
-
-        margin-top: 20px;
+        margin-top: 7px;
         color: #656464;
-        line-height: 29px;
-
-
+        line-height: 26px;
       }
 
-
-
-      .imagens-app {
-
-        display: flex;
-        align-items: flex-start;
-        padding-left: 195px;
-        justify-content: space-around;
-        flex: 50%;
-      }
-
-
-
-      .cor-fundo .imagens-app .celular {
+      @media (max-width:990px) {
+        .cor-fundo {
+          max-width: 100%;
+          height: max-content;
+        }
+        .cor-fundo .content{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .cor-fundo .content .esquerda{
+          margin-right: 100px;
+          margin-top: 30px;
+        }
         
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        bottom: 0%;
-        position: relative;
-        margin-right: 10rem;
+
       }
+
+      @media (max-width:465px){
+        .text_publicidade .imgstextos{
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width:359px){
+        .cor-fundo .content .esquerda .text_publicidade{
+          margin-right: 40px;
+          text-align: center;
+        }
+        .text_publicidade .imgstextos .Store{
+          width: 146px;
+          height: 62px;
+        }
+
+      }
+
 
 
                 /*--------------------------------------Noticias -----------------------------------------------------*/
