@@ -7,22 +7,11 @@ const btnNewst = document.getElementById('newst');
 
 for (const btn of btns) {
     btn.addEventListener('click', function() {
+      btnActive.classList.add('disabled');
+      btnNewst.classList.add('disabled');
+      btnPopular.classList.add('disabled');
+
       this.classList.toggle('disabled');
-      console.log(this.textContent)
-      switch (this.textContent) {
-        case "Active":
-            btnPopular.classList.add('disabled');
-            btnNewst.classList.add('disabled');
-            break;
-        case "Popular":
-            btnActive.classList.add('disabled');
-            btnNewst.classList.add('disabled');
-            break;
-        case "Newst":
-            btnPopular.classList.add('disabled');
-            btnActive.classList.add('disabled');
-            break;
-      }
     });
   }
 
