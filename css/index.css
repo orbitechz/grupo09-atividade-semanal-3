@@ -185,7 +185,7 @@ header {
     width: 150px;
     cursor: pointer;
     height: 55px;
-
+    margin-left: 10px;
   }
 
   .home .btns .btnInviteFriend:hover{
@@ -484,7 +484,6 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 100%;
 }
 
 .avaliacoes-content .achievement{
@@ -530,9 +529,8 @@ header {
 .boxes{
   display: flex;
   align-content: space-between;
-  /* margin-left: 5rem;
-  margin-right: 3rem; */
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .boxes .box{
@@ -542,9 +540,11 @@ header {
   width: 20rem;
   border-radius: 0.87rem;
   margin-inline: .8rem;
+  margin-bottom: 1rem;
 }
 
 .box .box-content{
+  margin-left: 2rem;
   height: 100%;
   max-width: 100%;
   display: flex;
@@ -624,6 +624,24 @@ header {
   color: #217BF4!important;
   font-weight: bold;
   font-family: var(--font-principal);
+}
+
+@media (max-width:1024px) {
+  .avaliacoes-content .achievement{
+    max-width: max-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: 2rem;
+  }
+  .membros h1{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem!important;
+  }
+  
+  .membros p{
+    width: 80%!important;
+  }
 }
 
 /*--------------------------------------COMMUNITY SECTION-----------------------------------------------------*/
