@@ -23,11 +23,11 @@
   height: 50px;
 }
 
-.mainBtn:hover{
+/* .mainBtn:hover{
   background-image: linear-gradient(#217BF4,#1a65c7);
   border: 2px solid #1a65c7;
 
-}
+} */
 
       /*--------------------------------------FOOTER & HEADER LOGO -----------------------------------------------------*/
       .logo{
@@ -774,24 +774,30 @@ header {
 }
 
 .members-buttons button{
-  background-color: transparent;
   border: none;
   font-family: var(--font-principal);
-  color: #2f2c4ac6;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  align-self: center;
+}
+.members-buttons button.disabled:hover{
+  background-image: none;
+  border: none;
+}
+
+.members-buttons .disabled{
+  background-color: transparent;
+  color: #2f2c4ac6;
+
 }
 .membros .boxes{
   margin-bottom: 8rem;
 }
+
 .membros .box{
   width: 16rem;
   height: 19rem;
-}
-.membros .box img{
-  position: inherit;
-  margin: 0;
 }
 
 .membros .box .box-content{
@@ -800,10 +806,22 @@ header {
   justify-content: space-around;
 
 }
-.box-content p{
-  margin:0;
-  
+
+.membros .box .box-content img{
+  position: inherit;
+  margin: 0;
+  height: 10rem;
+  width: 10rem;
+  margin-top: 1.5rem;
 }
+
+.membros .box .box-content h2{
+  font-size: 1.5rem;
+  color: #2F2C4A;
+
+}
+
+
 
 /*--------------------------------------FOOTER -----------------------------------------------------*/
 
